@@ -1,0 +1,39 @@
+show dbs
+
+use groq_rag
+
+
+
+
+db.documents.insertMany([
+  {
+    doc_id: "doc_021",
+    content: "Quantum computing leverages quantum bits to perform computations beyond classical capabilities.",
+    metadata: { category: "Quantum Computing" },
+    created_at: new Date()
+  },
+  {
+    doc_id: "doc_022",
+    content: "Reinforcement learning is used to train agents to make sequential decisions by maximizing reward.",
+    metadata: { category: "Machine Learning" },
+    created_at: new Date()
+  },
+  {
+    doc_id: "doc_023",
+    content: "Blockchain ensures data integrity through a distributed, immutable ledger system.",
+    metadata: { category: "Blockchain" },
+    created_at: new Date()
+  },
+  {
+    doc_id: "doc_024",
+    content: "Neural networks are inspired by biological neurons and form the foundation of deep learning.",
+    metadata: { category: "AI" },
+    created_at: new Date()
+  },
+  {
+    doc_id: "doc_025",
+    content: "Cloud computing provides scalable resources and services over the internet on demand.",
+    metadata: { category: "Cloud Computing" },
+    created_at: new Date()
+  }
+]);
